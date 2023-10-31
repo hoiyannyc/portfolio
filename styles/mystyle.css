@@ -1,5 +1,33 @@
 body {
-background-color: rgb(243, 243, 243);
+font-family: Arial, Helvetica, sans-serif;
+background-color: ghostwhite;
+color: grey;
+}
+h1 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 38px;
+color: blue;
+}
+h2 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 26px;
+color: blue;
+}
+h3 {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+color: grey;
+}
+p {
+font-size: 14px;
+line-height: 1.5;
+}
+figure {
+font-size: 12px;
+font-style: italic;
+}
+a {
+color: gray;
 }
 .responsive {
 max-width: 100%;
