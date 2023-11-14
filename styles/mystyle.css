@@ -33,9 +33,7 @@ p {
 }
 /* Body */
 body {
-    font-family: Helvetica, sans-serif;
-    font-weight: 100;
-    font-size: 14px;
+    font-family: 'poppins', Helvetica, sans-serif;
 }
 /* Nav */
 .sticky {
