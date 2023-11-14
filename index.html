@@ -1,7 +1,9 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/mystyle.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/base.css" media="screen"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/33978fb2ce.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My HTML page</title>
@@ -46,21 +48,26 @@
                 <p>Feel free to connect and share your experience with me.</p>
             </aside>
         </section>
+        <hr class="solid">
         <section id="projects">
             <h2>Projects</h2>
             <p>Check out some of my highlight projects below.</p>
-            <ol type="a">
-                <li>Project 1</li>
-                <li>Project 2</li>
+            <ol>
+                <li>Project 1<img src="images/unsplash2-hiking.jpg" height="300"></li>
+                
+                <li>Project 2<img src="images/unsplash2-hiking.jpg" height="300"></li>
+                
+                <li>Project 3<img src="images/unsplash2-hiking.jpg" height="300"></li>
             </ol>
             <aside>
                 <p>If you want to see more of my works, please contact me.</p>
             </aside>
         </section>
+        <hr class="solid">
         <section id="contact">
             <h2>My Contact</h2>
             <p>Feel free to reach out to me. I would love to collaborate and work together!</p>
-            <table>
+            <table class="center">
             <tr>
                 <th>Contact methods</th>
                 <th>Details</th>
@@ -78,7 +85,23 @@
     </main>
     <!--This is a comment-->
     <footer>
-        All right reserved &copy; Hoi Yan Cheng, 2023
+    <div class="container">
+        <div class="item-1">
+        <ul>
+            <li><a>About me</a></li>
+            <li><a>Projects</a></li>
+            <li><a>Contact</a></li>
+        </ul>
+        </div>
+        <div class="item item-2">
+        <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-behance" style="color: #ffffff;"></i>
+        <i class="fa-brands fa-instagram" style="color: #ffffff;"></i>
+        </div>
+        <div class="item item-3">
+        <p>All right reserved &copy; Hoi Yan Cheng, 2023</p>
+        </div>   
+    </div>
     </footer>
 </body>
 </html>
