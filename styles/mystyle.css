@@ -1,35 +1,190 @@
-body {
-font-family: Arial, Helvetica, sans-serif;
-background-color: ghostwhite;
-color: grey;
-}
+/* overall */
 h1 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 38px;
-color: blue;
+    font-family: poppins;
+    font-size: 30px;    
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
 }
 h2 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 26px;
-color: blue;
+    font-size: 24px;
 }
-h3 {
-font-family: Arial, Helvetica, sans-serif;
-font-size: 16px;
-color: grey;
+h2 ,h3 ,nav {
+    font-family: poppins;
+    text-align: center;
 }
 p {
-font-size: 14px;
-line-height: 1.5;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 2em 1em 2em 1em;
 }
-figure {
-font-size: 12px;
-font-style: italic;
-}
-a {
-color: gray;
+.caption {
+    font-style: italic;
+    font-size: small;
+    font-weight: 400;
+    color: rgb(127, 144, 172);
 }
 .responsive {
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
+    }
+#section {
+    margin: 1em 0em;
+}
+/* Body */
+body {
+    font-family: Helvetica, sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+}
+/* Nav */
+.sticky {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.list-inline {
+    list-style: none;
+	padding: 0;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    padding: 1em 1em;
+}
+nav ul li {
+    margin: 0.1em;
+    padding: 0.1em;
+    list-style: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    background-color: blue;
+    padding: 0.7em 2em 0.7em 2em;
+}
+nav ul li a:hover {
+    color: blue;    
+    background-color: white;
+    padding: 0.7em 2em 0.7em 2em;
+    border: solid 0.2em blue;
+}
+.content {
+    position: relative;
+    margin-top: 150px;
+}
+/* About me */
+#about {
+    background-color: rgb(230, 249, 255);
+    padding: 2em 1em 2em 1em;
+}
+.link {
+    color: black;
+}
+.link a {
+    color: black;
+}
+.link a:hover {
+    color: blue;
+}
+/* Projects */
+section#projects ol {
+    justify-content: center;
+    display: flex;
+    flex: 0 1 auto;
+    flex-wrap: wrap;
+    padding: 0;
+}
+section#projects ol li {
+    list-style: none;
+    margin: 0.5em;
+}
+.thumbnail img {
+    display: block;
+    width: 300px;
+    height: auto;
+    margin: auto;
+}
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+/* Contacts */
+#contact {
+    background-color: rgb(230, 249, 255);
+    padding: 2em 1em 2em 1em;
+}
+#detail ,th ,td {
+    font-family: 'poppins';
+    background-color: rgb(216, 218, 219);
+    padding: 0.6em;
+    text-align: left;
+    border: solid white 0.1em;
+    margin: 2em 0;
+}
+#detail th {
+    background-color: blue;
+    color: white;
+}
+#detail {
+    border-collapse: collapse;
+    width: 100%;
+}
+/* Footer */
+.container {
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b c c";
+    column-gap: 1em;
+    list-style: none;
+    align-items: center;
+}
+.item-1 {
+    grid-area: a;
+    margin: 0.5em;
+}
+.item-1 ul li{
+    display: inline;
+    margin: 0em 1em 0em 1em;
+}
+.item-2, .item-3 {
+    margin: 0.5em;
+}
+.item-2 {
+    grid-area: b;
+}
+.item-2 ul li {
+    display: inline;
+    height: auto;
+    width: auto;
+    padding: 0.4em
+}
+.item-3 {
+    grid-area: c;
+}
+#copyright {
+    text-align: right;
+}
+footer ul {
+    padding: 0;
+}
+footer ul li {
+    list-style: none;
+}
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+footer ul li a:hover {
+    color: lightblue;
+}
+footer * {
+    color: white;
+    background-color: blue;
+    /*border: white solid 0.1em; */
 }
