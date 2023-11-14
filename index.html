@@ -1,66 +1,73 @@
     <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/mystyle.css"/>
+    <link rel="stylesheet" type="text/css" href="/styles/mystyle.css" media="screen"/>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/33978fb2ce.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My HTML page</title>
+    <title>Yanny C. Portfolio</title>
 </head>
 <body>
-<header>
+<header class="sticky">
     <h1>Welcome to my page!</h1>
-    <nav>
-        <ul>
+    <nav id="navbar">
+        <ul class="list-inline">
             <li><a href="#about">About me</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li> 
         </ul>
     </nav>
 </header>
-    <main>
+    <main class="content">
+        <!--about-->
         <section id="about">
             <h2>About me</h2>
             <p>Hey there! I'm Hoi Yan Cheng, but you can call me Yanny. I'm a UX/UI designer. I love finding inspiration in the world around me.</p> 
-            <p>During my spare time, you can often find me immersed in the art of handcrafting or seeking adventure through thrilling activities like <a href="https://en.wikipedia.org/wiki/Hiking">hiking</a>, <a href="https://en.wikipedia.org/wiki/Scuba_diving">scuba diving</a>, <a href="https://en.wikipedia.org/wiki/Surfskating">surfskating</a> and more. These experiences fuel my creativity, enabling me to infuse unique perspectives into my design work.</p>
+            <p>During my spare time, you can often find me immersed in the art of handcrafting or seeking adventure through thrilling activities like <span class="link"><a href="https://en.wikipedia.org/wiki/Hiking">hiking</a></span>, <span class="link"><a href="https://en.wikipedia.org/wiki/Scuba_diving">scuba diving</a></span>, <span class="link"><a href="https://en.wikipedia.org/wiki/Surfskating">surfskating</a></span> and more. These experiences fuel my creativity, enabling me to infuse unique perspectives into my design work.</p>
             <section>
                 <h3>Hiking</h3>
                 <figure>
                 <img src="images/unsplash2-hiking.jpg" height="400" alt="Hiking in the mountain" class="responsive">
+                <figcaption class="caption">Hiking in the mountain</figcaption>
                 </figure>
             </section>
             <section>
                 <h3>Scuba diving</h3>
                 <figure>
                 <img src="images/unsplash1-scuba-diving.jpg" height="400" alt="Scuba diving in the ocean" class="responsive">
-                <figcaption>Scuba diving in the ocean</figcaption>
+                <figcaption class="caption">Scuba diving in the ocean</figcaption>
                 </figure>
             </section>
             <section>
                 <h3>Surfskating</h3>
                 <figure>
                 <img src="images/unsplash3-surfskate.jpg" height="400" alt="Surfskating at skate park" class="responsive">
-                <figcaption>Surfskating at skate park</figcaption>
+                <figcaption class="caption">Surfskating at skate park</figcaption>
                 </figure>
             </section>
             <aside>
                 <p>Feel free to connect and share your experience with me.</p>
             </aside>
         </section>
+        <!--projects-->
         <section id="projects">
             <h2>Projects</h2>
             <p>Check out some of my highlight projects below.</p>
-            <ol type="a">
-                <li>Project 1</li>
-                <li>Project 2</li>
+            <ol>
+                <li class="thumbnail">Website<img src="images/unsplash4-project1.jpg" height="300"></li>
+                <li class="thumbnail">User Experience<img src="images/unsplash5-project2.jpg" height="300"></li>
+                <li class="thumbnail">Mobile App<img src="images/unsplash6-project3.jpg" height="300"></li>
             </ol>
             <aside>
                 <p>If you want to see more of my works, please contact me.</p>
             </aside>
         </section>
+        <!--contacts-->
         <section id="contact">
             <h2>My Contact</h2>
             <p>Feel free to reach out to me. I would love to collaborate and work together!</p>
-            <table>
+            <table id="detail">
             <tr>
                 <th>Contact methods</th>
                 <th>Details</th>
@@ -76,9 +83,27 @@
             </table>
         </section>
     </main>
-    <!--This is a comment-->
+    <!--footer-->
     <footer>
-        All right reserved &copy; Hoi Yan Cheng, 2023
+    <div class="container">
+        <div class="item-1">
+        <ul>
+            <li><a href="#about">About me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        </div>
+        <div class="item-2">
+        <ul>
+            <li><i class="fa-brands fa-linkedin" style="color: #ffffff;"></i></li>
+            <li><i class="fa-brands fa-behance" style="color: #ffffff;"></i></li>
+            <li><i class="fa-brands fa-instagram" style="color: #ffffff;"></i></li>
+        </ul>
+        </div>
+        <div class="item-3">
+        <span id="copyright"><p>All right reserved &copy; Hoi Yan Cheng, 2023</p></span>
+        </div>   
+    </div>
     </footer>
 </body>
 </html>
