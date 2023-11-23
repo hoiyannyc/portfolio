@@ -36,15 +36,4 @@ for (let i = 1; i <= 100; i = i + 1) {
     let listItem = document.createElement('li');
     listItem.textContent = 'A' + i;
     numbersList.appendChild(listItem);
-  }
-//nav scrolling effect
-var pos1 = window.pageYOffset;
-window.onscroll = function() {
-var pos2s = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("nav").style.top = "0";
-  } else {
-    document.getElementById("nav").style.top = "-50px";
-  }
-  pos1 = pos2;
 }
