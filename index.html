@@ -26,6 +26,7 @@
             <h2>About me</h2>
             <p>Hey there! I'm Hoi Yan Cheng, but you can call me Yanny. I'm a UX/UI designer. I love finding inspiration in the world around me.</p> 
             <p>During my spare time, you can often find me immersed in the art of handcrafting or seeking adventure through thrilling activities like <span class="link"><a href="https://en.wikipedia.org/wiki/Hiking">hiking</a></span>, <span class="link"><a href="https://en.wikipedia.org/wiki/Scuba_diving">scuba diving</a></span>, <span class="link"><a href="https://en.wikipedia.org/wiki/Surfskating">surfskating</a></span> and more. These experiences fuel my creativity, enabling me to infuse unique perspectives into my design work.</p>
+            <!--hover button-->
             <button class="button" id="hoverButton">Want a coffee chat?</button>
             <section>
                 <h3>Hiking</h3>
@@ -61,12 +62,11 @@
                 <li class="thumbnail">User Experience<img src="images/unsplash5-project2.jpg" height="300" alt="project 2"></li>
                 <li class="thumbnail">Mobile App<img src="images/unsplash6-project3.jpg" height="300" alt="project 3"></li>
             </ol>
-            <aside>
-            <h3>Do you like my works?</h3>
+            <p>Do you like my works?</p>
             <h2>↓ Click the emoji to give me a little applause ↓</h2>
-            <span id="btnCounter" class="applause">👏🏼👏🏼👏🏼</span>
-            <p id="txtCounter" style="color: gray;"></p>
-            </aside>
+            <!--incrementing button & if else-->
+            <aside id="btnCounter" class="emoji"><a>👏🏻👏🏼👏🏽</a></aside>
+            <p id="txtCounter"></p>
         </section>
         <!--contacts-->
         <section id="contact">
@@ -86,7 +86,13 @@
                 <td>SAIT</td>
             </tr>
             </table>
-            <button onclick="btnAlert()">Not interested?</button>
+            <!--alert button-->
+            <button onclick="btnAlert()">⚠️ Alert</button>
+        </section>
+        <section id="list">
+            <!--for loops-->
+            <h2>List of numbers</h2>
+            <li id="numbers"></li>
         </section>
     </main>
     <!--footer-->
@@ -107,6 +113,7 @@
         </ul>
         </div>
         <div class="item-3">
+        <!--footer year-->
         <span id="copyright">All right reserved &copy; Hoi Yan Cheng, <span id=date></span></span>
         </div>   
     </div>
