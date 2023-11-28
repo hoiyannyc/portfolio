@@ -194,6 +194,7 @@ button {
     padding: 0.7em 2em 0.7em 2em;
     font-family: poppins;
     border: solid 0.3em rgb(166, 207, 225);
+    border-radius: 2em;
 }
 button:hover {
     color: white;
