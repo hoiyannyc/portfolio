@@ -220,10 +220,19 @@ aside.emoji a:hover {
 /* list */
 #numbers {
     list-style: none;
+    column-gap: 0.1em;
     columns: 5;
-    padding: 2em 1em 2em 1em;
+    padding: 0;
 }
 #list {
     padding: 2em 1em 2em 1em;
     text-decoration: none;
+}
+/* add color to odd and even in table */
+.evenNumber {
+    background-color: rgb(238, 249, 255);
+    color: rgb(97, 126, 138);
+}
+.oddNumber {
+    background-color: rgb(202, 238, 255);
 }
