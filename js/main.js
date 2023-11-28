@@ -30,10 +30,12 @@ document.getElementById('btnCounter').onclick = () => {
     }
 }
 //list
-let numbersList = document.getElementById('numbers');
+let ul = document.getElementById('numbers');
 
 for (let i = 1; i <= 100; i = i + 1) {
-    let listItem = document.createElement('li');
-    listItem.textContent = 'A' + i;
-    numbersList.appendChild(listItem);
+    let li = document.createElement('li');
+    li.textContent = i;
+
+    li.classList.add(i % 2 === 0 ? 'evenNumber' : 'oddNumber');
+    numbers.appendChild(li);
 }
