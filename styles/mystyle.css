@@ -27,6 +27,8 @@ p {
 .responsive {
     max-width: 100%;
     height: auto;
+    width: auto;
+    border-radius: 0.5em;
     }
 #section {
     margin: 1em 0em;
@@ -47,6 +49,8 @@ body {
     list-style: none;
 	padding: 0;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 nav ul {
     display: flex;
@@ -54,7 +58,7 @@ nav ul {
     padding: 1em 1em;
 }
 nav ul li {
-    margin: 0.1em;
+    margin: 1em 0.1em;
     padding: 0.1em;
     list-style: none;
 }
@@ -72,12 +76,12 @@ nav ul li a:hover {
 }
 .content {
     position: relative;
-    margin-top: 150px;
+    margin-top: 210px;
 }
 /* About me */
 #about {
     background-color: rgb(230, 249, 255);
-    padding: 2em 1em 2em 1em;
+    padding: 1em 1em 1em 1em;
 }
 .link {
     color: black;
@@ -88,13 +92,18 @@ nav ul li a:hover {
 .link a:hover {
     color: blue;
 }
+#profileImage {
+    border: solid white 0.2em;
+    border-radius: 5em;
+}
 /* Projects */
 section#projects ol {
     justify-content: center;
     display: flex;
-    flex: 0 1 auto;
+    flex: auto;
     flex-wrap: wrap;
     padding: 0;
+    margin: 1em;
 }
 section#projects ol li {
     list-style: none;
@@ -105,6 +114,7 @@ section#projects ol li {
     width: 300px;
     height: auto;
     margin: auto;
+    border-radius: 0.5em;
 }
 body {
     text-align: center;
@@ -122,7 +132,7 @@ body {
     padding: 0.6em;
     text-align: left;
     border: solid white 0.1em;
-    margin: 2em 0;
+    margin: 2em 0em 2em 0em;
 }
 #detail th {
     background-color: blue;
@@ -185,4 +195,55 @@ footer * {
     color: white;
     background-color: blue;
     /*border: white solid 0.1em; */
+}
+/*buttons*/
+button {
+    color: rgb(55, 79, 89);
+    text-decoration: none;
+    background-color: white;
+    padding: 0.7em 2em 0.7em 2em;
+    font-family: poppins;
+    border: solid 0.2em rgb(166, 207, 225);
+    border-radius: 2em;
+}
+button:hover {
+    color: white;
+    background-color: rgb(97, 126, 138);
+    padding: 0.7em 2em 0.7em 2em;
+    border-radius: 2em;
+}
+/* incrementing button */
+aside.emoji {
+    font-size: 40px;
+}
+aside.emoji a:hover {
+    background-color: rgb(230, 249, 255);
+    border-radius: 2em;
+    padding: 0.3em;
+}
+/* odd or even */
+.even {
+    color: blue;
+}
+.odd {
+    color: gray;
+}
+/* list */
+#numbers {
+    list-style: none;
+    column-gap: 0.1em;
+    columns: 5;
+    padding: 0;
+}
+#list {
+    padding: 2em 1em 2em 1em;
+    text-decoration: none;
+}
+/* add color to odd and even in table */
+.evenNumber {
+    background-color: rgb(238, 249, 255);
+    color: rgb(97, 126, 138);
+}
+.oddNumber {
+    background-color: rgb(202, 238, 255);
 }
