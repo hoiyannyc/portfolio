@@ -16,7 +16,7 @@ h2 ,h3 ,nav {
 p {
     font-size: 14px;
     line-height: 22px;
-    margin: 2em 1em 2em 1em;
+    margin: 2em 0.5em 2em 0.5em;
 }
 figcaption {
     font-style: italic;
