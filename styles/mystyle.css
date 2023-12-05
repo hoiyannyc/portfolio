@@ -18,7 +18,7 @@ p {
     line-height: 22px;
     margin: 2em 1em 2em 1em;
 }
-.caption {
+figcaption {
     font-style: italic;
     font-size: small;
     font-weight: 400;
@@ -38,24 +38,19 @@ body {
     font-family: 'poppins', Helvetica, sans-serif;
 }
 /* Nav */
-.sticky {
+header {
     background-color: white;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 100;
-}
-.list-inline {
-    list-style: none;
 	padding: 0;
-    justify-content: center;
-    display: flex;
-    flex-wrap: wrap;
 }
 nav ul {
-    display: flex;
-    flex-direction: row;
+    align-items: center;
     padding: 1em 1em;
+    margin: 0 auto;
+    display: inline-flex;
 }
 nav ul li {
     margin: 1em 0.1em;
@@ -126,21 +121,26 @@ body {
     background-color: rgb(230, 249, 255);
     padding: 2em 1em 2em 1em;
 }
-#detail ,th ,td {
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 1em;
+}
+.table ,th {
+    background-color: blue;
+    color: white;
+    text-align: left;
+    text-align: left;
+    border: solid white 0.1em;
+    padding: 0.6em;
+}
+.detail ,td {
     font-family: 'poppins';
     background-color: rgb(216, 218, 219);
     padding: 0.6em;
     text-align: left;
     border: solid white 0.1em;
     margin: 2em 0em 2em 0em;
-}
-#detail th {
-    background-color: blue;
-    color: white;
-}
-#detail {
-    border-collapse: collapse;
-    width: 100%;
 }
 /* Footer */
 .container {
@@ -175,7 +175,7 @@ body {
 .item-3 {
     grid-area: c;
 }
-#copyright {
+span {
     text-align: right;
 }
 footer ul {
@@ -213,10 +213,10 @@ button:hover {
     border-radius: 2em;
 }
 /* incrementing button */
-aside.emoji {
+aside {
     font-size: 40px;
 }
-aside.emoji a:hover {
+aside a:hover {
     background-color: rgb(230, 249, 255);
     border-radius: 2em;
     padding: 0.3em;
@@ -246,4 +246,18 @@ aside.emoji a:hover {
 }
 .oddNumber {
     background-color: rgb(202, 238, 255);
+}
+/* responsiveness color change for mobile portrait screen */
+@media screen and (max-width: 320px) {
+    body {
+      background-color: rgb(104, 180, 255);
+      font-size: 16px;
+    }
+}
+/* responsiveness color change for tablet portrait screen */
+@media screen and (min-width: 321px) and (max-width: 768px) {
+    body {
+      background-color: rgb(190, 190, 190);
+      font-size: 16px;
+    }
 }
